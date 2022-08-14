@@ -10,14 +10,3 @@
 body{
     background-color: #FAFBFD;
 }
-
-header{
-    background-color: #ffffff;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 2px #e7e7e7;
-}
-
-nav{
-    max-width:1200px;
-    margin:auto;
-}
