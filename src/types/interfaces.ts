@@ -1,5 +1,8 @@
-export interface IAppContext {
+import { IAllCourse } from "./allCoursesInterfaces";
 
+export interface IAppContext {
+    myCourses: IMyCourse[]
+    allCourses: IAllCourse[]
 }
 
 export interface ICategory {

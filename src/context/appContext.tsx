@@ -21,7 +21,6 @@ export const AppContextProvider = ({children}: AppContextProps) => {
         try {
             const {data} = await axios.get<IMyCourse[]>(myCoursesUrl)
             setMyCourses(data)
-            console.log(data)
         }
         catch(error){
             console.log(error);
@@ -32,7 +31,6 @@ export const AppContextProvider = ({children}: AppContextProps) => {
         try {
             const {data} = await axios.get<IAllCourse[]>(allCoursesUrl)
             setAllCourses(data)
-            console.log(data)
         }
         catch(error){
             console.log(error);
