@@ -12,12 +12,52 @@
 }
 
 .nav-header{
-    background-color: #ffffff;
+    background-color: #abc0e7;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 2px #e7e7e7;
+    box-shadow: 0 2px 2px #abc0e7;
+    margin-bottom: 2rem;
 }
 
 .navbar{
     max-width:1200px;
     margin:auto;
+}
+
+.tab-container{
+    padding: 0 2rem;
+}
+
+.nav-tabs{
+    max-width:1200px;
+    margin: 0 auto .4rem;
+}
+
+.tab-btn{
+    background-color: #F2F5FA;
+    border: none;
+    padding: .8rem;
+    font-size: 1rem;
+    margin-right: .5rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tab-btn:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.active{
+    color: #2B88E1;
+    background-color: #ffffff;
+}
+
+.active::before{
+    content: '';
+    background-color: #ffffff;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }

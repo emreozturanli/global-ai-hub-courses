@@ -1,0 +1,11 @@
+.my-courses{
+    padding:0 2rem;
+}
+
+.courses-grid{
+    max-width:1200px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin:auto;
+}

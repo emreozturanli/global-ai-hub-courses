@@ -1,9 +1,9 @@
 import { Navigate} from 'react-router-dom';
 
-const PrivateRoute = () => {
+const HomeRoute = () => {
   return (
         <Navigate to="/my-courses" />
   )
 }
 
-export default PrivateRoute
+export default HomeRoute
