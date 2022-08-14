@@ -2,14 +2,14 @@ Aşağıda yer alan iki url’e GET methodu ile istek göndererek bu çalışma 
 
 My Courses
 curl --location --request GET
-https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.iö/wp-json/ldlms/v2/my_courses
+https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/my_courses
 
 
 All Courses
 
 curl --location --request GET
 
-https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.iö/wp-json/ldlms/v2/sfwd-courses
+https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/sfwd-courses
 
 
 Görev Tanımı: Eriştiğiniz json datalarını kullanarak;
