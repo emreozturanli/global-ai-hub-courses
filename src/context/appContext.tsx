@@ -16,7 +16,6 @@ export const AppContext = createContext({} as IAppContext)
 export const AppContextProvider = ({children}: AppContextProps) => {
     const [myCourses, setMyCourses] = useState<IMyCourse[]>([])
     const [allCourses, setAllCourses] = useState<IAllCourse[]>([])
-    const [myCourseBtn,setMyCourseBtn] = useState<boolean>(true)
 
     const getMyCourses = async () =>{
         try {
@@ -43,7 +42,7 @@ export const AppContextProvider = ({children}: AppContextProps) => {
         getAllCourses()
     },[])
 
-    return <AppContext.Provider value={{myCourses,allCourses,myCourseBtn,setMyCourseBtn}}>
+    return <AppContext.Provider value={{myCourses,allCourses}}>
         {children}
     </AppContext.Provider>
 }
