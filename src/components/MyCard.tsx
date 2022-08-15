@@ -8,7 +8,6 @@ interface IMyCardProps {
 const MyCard = (props: IMyCardProps) => {
     const [modal, setModal] = useState<boolean>(false)
     const { course } = props
-    console.log(modal)
     return (
         <>
             <div className="card" onClick={() => setModal(true)}>
@@ -20,7 +19,7 @@ const MyCard = (props: IMyCardProps) => {
                     <img src={course.card_image} alt={course.title} />
                     <h2>{course.title}</h2>
                     <p dangerouslySetInnerHTML={{ __html: course.description }} />
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatem atque dolor minus nam, ipsa necessitatibus odio a perferendis beatae quas excepturi minima ducimus quaerat, aut veniam quod tempora. Repellendus cupiditate perspiciatis adipisci delectus reiciendis quae voluptatem facere, eveniet corporis, vero dolorum ad saepe animi atque cumque recusandae exercitationem nemo.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatem atque dolor minus nam, ipsa necessitatibus odio a perferendis beatae quas excepturi minima ducimus quaerat, aut veniam quod tempora.</p>
                 </div>
                 <button
                     className="close"
