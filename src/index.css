@@ -107,6 +107,52 @@ main{
     border-top-right-radius: 7px;
 }
 
-.card h2{
+.card h2,p{
     margin: 1rem;
+}
+
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #000000a2;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 1s;
+    display: grid;
+    place-items: center;
+}
+
+.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content{
+    width: 90%;
+    max-width: 500px;
+    height: 80%;
+    background-color: #fffefe;
+    border-radius: 10px;
+}
+
+.modal-content img{
+    width: 100%;
+}
+
+.modal-content h2{
+    padding: 1rem ;
+}
+
+.close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    background-color: rgb(253, 77, 77);
+}
+
+.close:hover{
+    background-color: rgb(252, 252, 252);
+    color: red;
 }
