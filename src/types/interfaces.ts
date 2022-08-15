@@ -3,6 +3,8 @@ import { IAllCourse } from "./allCoursesInterfaces";
 export interface IAppContext {
     myCourses: IMyCourse[]
     allCourses: IAllCourse[]
+    myCourseBtn: boolean
+    setMyCourseBtn : React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export interface ICategory {
