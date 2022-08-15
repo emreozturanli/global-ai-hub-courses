@@ -1,6 +1,6 @@
 import { IMyCourse } from "../../types/interfaces"
 import myCourseStyle from './myCourseCard.module.css'
-import image from '../../assets/def-img.png'
+
 interface ICourseCardProps {
   course: IMyCourse
 }
@@ -10,7 +10,7 @@ const CourseCard = (props:ICourseCardProps) => {
 
   return (
     <div className={myCourseStyle['card']}>
-      <img className={myCourseStyle['image']} src={image} alt={course.title}  />
+      <img className={myCourseStyle['image']} src={course.card_image}  referrerPolicy="no-referrer" alt={course.title}  />
       <h3 className={myCourseStyle['title']}>{course.title}</h3>
       <p  className={myCourseStyle['desc']} dangerouslySetInnerHTML={{__html:course.description}}/>
     </div>
