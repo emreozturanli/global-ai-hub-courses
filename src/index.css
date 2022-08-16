@@ -52,8 +52,13 @@ button{
 }
 
 button:hover{
-    background-color: orange;
+    opacity: .8;
     cursor: pointer;
+}
+
+.active{
+    background-color: #86f667;
+    color: #000000;
 }
 
 /* GRID */
